@@ -140,10 +140,7 @@ export const build = gulp.series(
     scripts,
     createWebp
   ),
-  gulp.series(
-    server,
-    watcher,
-  ));
+  );
 
 //Default
 
