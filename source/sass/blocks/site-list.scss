@@ -1,0 +1,33 @@
+.site-list {
+  display: flex;
+  margin-top: 71px;
+  list-style: none;
+  justify-content: space-between;
+}
+
+.site-list-wrapper-left,
+.site-list-wrapper-right {
+  display: flex;
+}
+.site-list__item {
+  margin-right: 30px;
+}
+.site-list__item a {
+  text-decoration: none;
+  font-family: $font_helvetica;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 21px;
+  color: $grey1;
+  text-transform: uppercase;
+  &:hover {
+    color: $black;
+  }
+}
+
+.site-list-wrapper-right  .site-list__item:last-child{
+  margin-right: 0;
+}
+
+

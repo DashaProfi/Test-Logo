@@ -1,0 +1,12 @@
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.main-nav--closed {
+  display: none;
+}
+
+.main-nav--opened {
+  display: flex;
+}

@@ -1,0 +1,27 @@
+
+.breadcrumbs {
+  list-style: none;
+  display: flex;
+}
+
+.breadcrumbs__link {
+  text-decoration: none;
+  font-family: $font_helvetica;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: $grey1;
+  margin-right: 10px;
+
+  &--active {
+    color: $black;
+  }
+  &:hover {
+    color: $black;
+  }
+}
+
+.breadcrumbs__link span {
+  margin-left: 10px;
+}

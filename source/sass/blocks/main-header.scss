@@ -1,0 +1,17 @@
+.main-header {
+  position: relative;
+  margin-top: 20px;
+}
+
+.main-header__logo-image {
+  position: absolute;
+  top: 0;
+  right: calc(50% - 39px);
+}
+
+@media (min-width: $desktop-width) {
+  .main-header {
+    margin-top: 33px;
+  }
+
+}
