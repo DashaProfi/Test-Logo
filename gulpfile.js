@@ -89,14 +89,14 @@ const sprite = () => {
 const copy = (done) => {
   gulp.src(['source/fonts/*.{woff,woff2}', 'source/*.ico', 'source/*.webmanifest'],
     {base: 'source'})
-    .pipe(gulp.dest('build'))
+    .pipe(gulp.dest('public'))
   done();
 }
 
 //Clean
 
 const clean = () => {
-  return del('build');
+  return del('public');
 }
 
 // Server
@@ -104,7 +104,7 @@ const clean = () => {
 const server = (done) => {
   browser.init({
     server: {
-      baseDir: 'build'
+      baseDir: 'public'
     },
     cors: true,
     notify: false,
